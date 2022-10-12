@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "115199853731",
+    "project_id": "zegelmack-8b7f1",
+    "storage_bucket": "zegelmack-8b7f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115199853731:android:ec157239689bc30c0aeb16",
+        "android_client_info": {
+          "package_name": "com.example.zegelmack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115199853731-3sn4825jfu6pib745k26ufn69l2b17pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW3D4535lrOxAFMPScSpnrOKWsn6Q2Puc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115199853731-3sn4825jfu6pib745k26ufn69l2b17pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
