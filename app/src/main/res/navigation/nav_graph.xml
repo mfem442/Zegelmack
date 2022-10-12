@@ -9,5 +9,24 @@
         android:id="@+id/mainFormFragment"
         android:name="com.example.zegelmack.MainFormFragment"
         android:label="fragment_main_form"
-        tools:layout="@layout/fragment_main_form" />
+        tools:layout="@layout/fragment_main_form" >
+        <action
+            android:id="@+id/action_mainFormFragment_to_formFragment1"
+            app:destination="@id/formFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment1"
+        android:name="com.example.zegelmack.FormFragment1"
+        android:label="fragment_form1"
+        tools:layout="@layout/fragment_form1" >
+        <action
+            android:id="@+id/action_formFragment1_to_formFragment2"
+            app:destination="@id/formFragment2" />
+    </fragment>
+    <action android:id="@+id/action_global_mainFormFragment" app:destination="@id/mainFormFragment" />
+    <fragment
+        android:id="@+id/formFragment2"
+        android:name="com.example.zegelmack.FormFragment2"
+        android:label="fragment_form2"
+        tools:layout="@layout/fragment_form2" />
 </navigation>

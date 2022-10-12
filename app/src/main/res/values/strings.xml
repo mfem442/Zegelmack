@@ -93,4 +93,14 @@
     <string name="action_settings">Settings</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="anterior">Anterior</string>
+    <string name="cargo">Cargo:</string>
+    <string name="departamento">Departamento:</string>
+    <string name="p_gina_web">Página Web:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="email">Email:</string>
+    <string name="compa_a">Compañía:</string>
+    <string name="celular">Cel:</string>
 </resources>

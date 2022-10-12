@@ -15,10 +15,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [MainFormFragment.newInstance] factory method to
+ * Use the [FormFragment1.newInstance] factory method to
  * create an instance of this fragment.
  */
-class MainFormFragment : Fragment() {
+class FormFragment1 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,11 +36,13 @@ class MainFormFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_main_form, container, false)
-        view.findViewById<Button>(R.id.next_btn).setOnClickListener{
-            findNavController().navigate(R.id.action_mainFormFragment_to_formFragment1)
+        val view = inflater.inflate(R.layout.fragment_form1, container, false)
+        view.findViewById<Button>(R.id.before_btn).setOnClickListener{
+            findNavController().navigate(R.id.action_global_mainFormFragment)
         }
-
+        view.findViewById<Button>(R.id.next_btn).setOnClickListener{
+            findNavController().navigate(R.id.action_formFragment1_to_formFragment2)
+        }
         return view
     }
 
@@ -51,12 +53,12 @@ class MainFormFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment MainFormFragment.
+         * @return A new instance of fragment FormFragment1.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            MainFormFragment().apply {
+            FormFragment1().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
